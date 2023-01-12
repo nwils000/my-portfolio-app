@@ -9,7 +9,7 @@ export default function CursorAnimation() {
     console.log(div);
     const { offsetX: x, offsetY: y } = e,
       { offsetWidth: width, offsetHeight: height } = this,
-      move = 25,
+      move = 50,
       xMove = (x / width) * (move * 2) - move,
       yMove = (y / height) * (move * 2) - move;
 
