@@ -1,4 +1,38 @@
 .navbar__container {
+  display: grid;
+  grid-template-columns: 21vw 21vw 21vw 21vw;
+  height: 1px;
+  position: fixed;
+  margin: 0 8vw;
+}
+
+.navbar__line {
   background-color: white;
-  height: 3rem;
+  height: 1px;
+  width: auto;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 12vw;
+}
+
+.line1 {
+  background-color: rgba(255, 255, 255, 0.468);
+}
+.line2 {
+  background-color: rgba(255, 255, 255, 0.53);
+}
+.line3 {
+  background-color: rgba(255, 255, 255, 0.477);
+}
+.line4 {
+  background-color: rgba(255, 255, 255, 0.525);
+}
+
+.nav__link {
+  height: 16px;
+  width: 16px;
+  background-color: rgba(255, 255, 255, 0.644);
+  position: relative;
+  bottom: 8px;
 }

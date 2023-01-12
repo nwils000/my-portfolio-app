@@ -1,17 +1,12 @@
 .home__wrapper {
-  height: calc(100vh - 3rem);
-  cursor: none;
+  height: 100vh;
   margin: 0 auto;
-  text-align: center;
 }
 
 .hover-this {
   transition: all 0.3s ease;
   width: 100%;
-}
-
-.hover-this:hover {
-  cursor: none;
+  text-align: center;
 }
 
 .home__name {
@@ -27,8 +22,8 @@
   pointer-events: none;
   transition: transform 0.2s linear;
   width: 100%;
-  height: calc(100vh - 3rem);
-  padding-bottom: 3rem;
+  height: 100vh;
+  padding-bottom: 4.5rem;
 }
 
 .home__wrapper .cursor {
