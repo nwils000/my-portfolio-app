@@ -1,21 +1,35 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import circle from "../Photos/circle.png";
+import Home from "./Home";
 
 export default function Navbar() {
   return (
-    <div className="navbar__container">
-      <div className="navbar__line line1">
-        <Link className="nav__link">Link 1</Link>
+    <div className="nav__container">
+      <div className="nav__line line1">
+        <h2 className="heading1">Home</h2>
+        <Link className="nav__link">
+          <img src={circle} />
+        </Link>
       </div>
-      <div className="navbar__line line2">
-        <Link className="nav__link">Link 2</Link>
+      <div className="nav__line line2">
+        <h2 className="heading2">About</h2>
+        <Link className="nav__link">
+          <img src={circle} />
+        </Link>
       </div>
-      <div className="navbar__line line3">
-        <Link className="nav__link">Link 3</Link>
+      <div className="nav__line line3">
+        <h2 className="heading3">Projects</h2>
+        <Link className="nav__link">
+          <img src={circle} />
+        </Link>
       </div>
-      <div className="navbar__line line4">
-        <Link className="nav__link">Link 4</Link>
+      <div className="nav__line line4">
+        <h2 className="heading4">Contact</h2>
+        <Link className="nav__link">
+          <img src={circle} />
+        </Link>
       </div>
+      <div className="cursor"></div>
     </div>
   );
 }

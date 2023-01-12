@@ -1,38 +1,88 @@
-.navbar__container {
+.nav__container {
   display: grid;
-  grid-template-columns: 21vw 21vw 21vw 21vw;
-  height: 1px;
+  grid-template-columns: 26.9vw 22.6vw 23vw 22vw;
+  height: 2px;
   position: fixed;
-  margin: 0 8vw;
+  margin: 0 8vw 0 2.4vw;
 }
 
-.navbar__line {
-  background-color: white;
-  height: 1px;
+.nav__line {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 2px;
   width: auto;
-  margin-top: 4.5rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: row-reverse;
   padding-right: 12vw;
+  animation: flash 4s linear infinite;
+  pointer-events: none;
 }
 
-.line1 {
-  background-color: rgba(255, 255, 255, 0.468);
-}
-.line2 {
-  background-color: rgba(255, 255, 255, 0.53);
-}
-.line3 {
-  background-color: rgba(255, 255, 255, 0.477);
-}
-.line4 {
-  background-color: rgba(255, 255, 255, 0.525);
+.nav__selected {
+  background-color: white;
 }
 
 .nav__link {
-  height: 16px;
-  width: 16px;
-  background-color: rgba(255, 255, 255, 0.644);
+  display: inline-block;
+  height: auto;
+  width: auto;
   position: relative;
-  bottom: 8px;
+  bottom: 20px;
+  left: 2rem;
+  pointer-events: all;
 }
+
+.nav__line h2 {
+  color: white;
+  position: relative;
+  padding-bottom: 38px;
+  bottom: 70px;
+}
+
+.heading1 {
+  right: 17px;
+}
+.heading2 {
+  right: 18px;
+}
+.heading3 {
+  right: 26px;
+}
+.heading4 {
+  right: 26px;
+}
+
+.nav__link img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.nav__line .cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  mix-blend-mode: soft-light;
+  transition: transform 0.3s ease;
+}
+
+.nav__line:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(8);
+  background-color: rgba(255, 255, 255, 0.396);
+}
+
+@keyframes flash {
+  0% {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* Make the spacing of the titles responsive */

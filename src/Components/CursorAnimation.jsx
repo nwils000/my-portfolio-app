@@ -1,21 +1,16 @@
-import { useEffect } from "react";
-
 export default function CursorAnimation() {
-  const link = document.querySelectorAll(".name__wrapper > .hover-this");
+  const movable = document.querySelectorAll(".name__wrapper > .hover-this");
   const cursor = document.querySelector(".cursor");
 
   const animateit = function (e) {
     const div = this.querySelector(".home__name");
-    console.log(div);
     const { offsetX: x, offsetY: y } = e,
       { offsetWidth: width, offsetHeight: height } = this,
-      move = 50,
+      move = 80,
       xMove = (x / width) * (move * 2) - move,
       yMove = (y / height) * (move * 2) - move;
 
     div.style.transform = `translate(${xMove}px, ${yMove}px)`;
-
-    if (e.type === "mouseout") div.style.transform = "";
   };
 
   const editCursor = (e) => {
@@ -24,7 +19,6 @@ export default function CursorAnimation() {
     cursor.style.top = y + "px";
   };
 
-  link.forEach((b) => b.addEventListener("mousemove", animateit));
-  link.forEach((b) => b.addEventListener("mouseout", animateit));
+  movable.forEach((b) => b.addEventListener("mousemove", animateit));
   window.addEventListener("mousemove", editCursor);
 }
