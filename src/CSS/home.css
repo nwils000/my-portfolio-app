@@ -1,9 +1,14 @@
 .home__wrapper {
-  height: 100vh;
+  height: calc(100vh - 12px);
   margin: 0 auto;
 }
 
+.name__wrapper {
+  height: inherit;
+}
+
 .hover-this {
+  height: inherit;
   transition: all 0.3s ease;
   width: 100%;
   text-align: center;
@@ -15,36 +20,61 @@
   justify-content: center;
   font-family: "Exo 2", sans-serif;
 
-  color: #fff;
-
   text-transform: uppercase;
   pointer-events: none;
   transition: transform 0.2s linear;
-  width: 100%;
-  height: 100vh;
-  padding-bottom: 2rem;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.853);
+  width: 60%;
+  position: absolute;
+  top: -13.8%;
+  height: inherit;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.342);
+}
+
+.home__titles {
+  position: relative;
+  top: 14%;
+  left: 32%;
+  color: rgba(255, 255, 255, 0);
 }
 
 .home__name h1 {
-  font-size: 3.3rem;
+  font-size: 3.2rem;
   word-spacing: 6px;
+  animation: changeTextBg 6s linear infinite;
+  -webkit-background-clip: text;
   letter-spacing: 4px;
 }
 
 .home__name h2 {
-  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
   word-spacing: 3px;
   letter-spacing: 2px;
+  animation: changeTextBg 3s linear infinite;
+  -webkit-background-clip: text;
   position: relative;
-  bottom: 3%;
+  bottom: 32px;
+  left: 121px;
 }
+
 .home__wrapper .cursor {
   pointer-events: none;
   position: fixed;
   padding: 0.3rem;
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%;
   mix-blend-mode: soft-light;
   transition: transform 0.3s ease;
+}
+
+@keyframes changeTextBg {
+  0% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #288ccf;
+  }
+  100% {
+    background-color: #ffffff;
+  }
 }
