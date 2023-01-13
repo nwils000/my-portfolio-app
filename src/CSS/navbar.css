@@ -1,6 +1,6 @@
 .nav__container {
   display: grid;
-  grid-template-columns: 26.9vw 22.6vw 23vw 22vw;
+  grid-template-columns: 28vw 22.6vw 23vw 22vw;
   height: 2px;
   position: fixed;
   margin: 0 8vw 0 2.4vw;
@@ -75,14 +75,39 @@
 
 @keyframes flash {
   0% {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.1);
   }
   50% {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
   }
   100% {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
-/* Make the spacing of the titles responsive */
+@media screen and (max-width: 1700px) {
+  .nav__container {
+    grid-template-columns: 29vw 22.6vw 23vw 22vw;
+    margin: 0 0 0 1.3vw;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .nav__container {
+    grid-template-columns: 30vw 22.6vw 23vw 22vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav__container {
+    grid-template-columns: 35vw 22.6vw 23vw 22vw;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav__container {
+    grid-template-columns: 39vw 22.6vw 23vw 21vw;
+    margin: 0;
+  }
+}
