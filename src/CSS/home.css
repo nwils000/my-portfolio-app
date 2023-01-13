@@ -1,5 +1,5 @@
 .home__wrapper {
-  height: calc(100vh - 12px);
+  height: 100vh;
   margin: 0 auto;
 }
 
