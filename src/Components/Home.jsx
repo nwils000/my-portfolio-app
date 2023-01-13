@@ -8,8 +8,10 @@ export default function Home() {
         <Navbar />
         <div href="#" className="hover-this">
           <div className="home__name">
-            <h1>Nathan Wilson</h1>
-            <h2>Web Developer</h2>
+            <div className="home__titles">
+              <h1>Nathan Wilson</h1>
+              <h2>Web Developer</h2>
+            </div>
           </div>
         </div>
         <div className="cursor"></div>
