@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import circle from "../Photos/circle.png";
-import Home from "./Home";
 
-export default function Navbar() {
+export default function Navbar({ cursorClass }) {
   return (
     <div className="nav__container">
       <div className="nav__line line1">
@@ -29,7 +28,7 @@ export default function Navbar() {
           <img src={circle} />
         </Link>
       </div>
-      <div className="cursor"></div>
+      <div className={cursorClass}></div>
     </div>
   );
 }
