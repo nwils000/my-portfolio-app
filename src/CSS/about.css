@@ -1,9 +1,6 @@
 .dark__wrapper {
   background-color: black;
   height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
 }
 
 .dark__wrapper h1 {
@@ -11,14 +8,14 @@
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.671);
   font-size: 3.4rem;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 24%;
 }
 
 .light__wrapper {
   background-color: #92c1e0;
   height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
 }
 
 .light__wrapper h1 {
@@ -29,7 +26,11 @@
 
 .light-switch {
   height: 8rem;
-  margin-left: 75vw;
+}
+
+.switch-wrapper {
+  position: relative;
+  top: 20%;
 }
 
 .cursor-hovered {

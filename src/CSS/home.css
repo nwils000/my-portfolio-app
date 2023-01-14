@@ -32,12 +32,12 @@
 .home__titles {
   position: relative;
   top: 14%;
-  left: 33.4%;
+  left: 34.4%;
   color: rgba(255, 255, 255, 0);
 }
 
 .home__name h1 {
-  font-size: 3.2rem;
+  font-size: 5rem;
   word-spacing: 6px;
   animation: changeTextBg 6s linear infinite;
   -webkit-background-clip: text;
@@ -46,14 +46,14 @@
 
 .home__name h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
   word-spacing: 3px;
   letter-spacing: 2px;
   animation: changeTextBg 3s linear infinite;
   -webkit-background-clip: text;
   position: relative;
-  bottom: 32px;
-  left: 121px;
+  bottom: 45px;
+  left: 183px;
 }
 
 .home__wrapper .cursor {

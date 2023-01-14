@@ -9,10 +9,7 @@ export default function About({ handleHover, handleLeave, icon }) {
 
   return (
     <div className={switchActive ? "dark__wrapper" : "light__wrapper"}>
-      <h1 className={switchActive ? "dark__heading" : "light__heading"}>
-        Find the light switch
-      </h1>
-      <div>
+      <div className="switch-wrapper">
         <img
           className="light-switch"
           src={icon}
@@ -22,6 +19,9 @@ export default function About({ handleHover, handleLeave, icon }) {
           onMouseLeave={handleLeave}
         />
       </div>
+      <h1 className={switchActive ? "dark__heading" : "light__heading"}>
+        Find the light switch
+      </h1>
     </div>
   );
 }
