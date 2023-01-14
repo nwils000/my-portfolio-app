@@ -7,25 +7,25 @@ export default function Navbar({ cursorClass }) {
       <div className="nav__line line1">
         <h2 className="heading1">Home</h2>
         <Link className="nav__link">
-          <img src={circle} />
+          <img src={circle} alt="" />
         </Link>
       </div>
       <div className="nav__line line2">
         <h2 className="heading2">About</h2>
         <Link className="nav__link">
-          <img src={circle} />
+          <img src={circle} alt="" />
         </Link>
       </div>
       <div className="nav__line line3">
         <h2 className="heading3">Projects</h2>
         <Link className="nav__link">
-          <img src={circle} />
+          <img src={circle} alt="" />
         </Link>
       </div>
       <div className="nav__line line4">
         <h2 className="heading4">Contact</h2>
         <Link className="nav__link">
-          <img src={circle} />
+          <img src={circle} alt="" />
         </Link>
       </div>
       <div className={cursorClass}></div>
