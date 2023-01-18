@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "../CSS/app.css";
 import Home from "./Home";
 import About from "./About";
-import CursorAnimation from "./CursorAnimation";
 import whiteSwitch from "../Photos/whiteSwitch.png";
 import blackSwitch from "../Photos/blackSwitch.png";
 
@@ -19,14 +19,22 @@ function App() {
     setIcon(blackSwitch);
   }
 
-  useEffect(() => {
-    CursorAnimation();
-  }, []);
-
   return (
     <div>
-      <Home cursorClass={cursorClass} />
-      <About handleHover={handleHover} handleLeave={handleLeave} icon={icon} />
+      <Routes>
+        <Route path="/" element={<Home cursorClass={cursorClass} />}></Route>
+        <Route
+          path="/about"
+          element={
+            <About
+              handleHover={handleHover}
+              handleLeave={handleLeave}
+              icon={icon}
+              cursorClass={cursorClass}
+            />
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }

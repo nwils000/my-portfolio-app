@@ -6,13 +6,13 @@ export default function Navbar({ cursorClass }) {
     <div className="nav__container">
       <div className="nav__line line1">
         <h2 className="heading1">Home</h2>
-        <Link className="nav__link">
+        <Link className="nav__link" to="/">
           <img src={circle} alt="" />
         </Link>
       </div>
       <div className="nav__line line2">
         <h2 className="heading2">About</h2>
-        <Link className="nav__link">
+        <Link className="nav__link" to="/about">
           <img src={circle} alt="" />
         </Link>
       </div>
