@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.dark__wrapper .personal__content {
+  display: none;
+}
+
 .light__wrapper .light-switch {
   display: none;
 }
@@ -38,6 +42,25 @@
 
 .light-switch__wrapper {
   width: 10rem;
+}
+
+.light__container {
+  display: flex;
+  padding: 2rem;
+}
+
+.personal__content {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffffe1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.personal__content h2 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .cursor-hovered {

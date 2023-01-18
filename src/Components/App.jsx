@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "../CSS/app.css";
 import Home from "./Home";
 import About from "./About";
+import Contact from "./Contact";
 import whiteSwitch from "../Photos/whiteSwitch.png";
 import blackSwitch from "../Photos/blackSwitch.png";
 
@@ -33,6 +34,10 @@ function App() {
               cursorClass={cursorClass}
             />
           }
+        ></Route>
+        <Route
+          path="/contact"
+          element={<Contact cursorClass={cursorClass} />}
         ></Route>
       </Routes>
     </div>

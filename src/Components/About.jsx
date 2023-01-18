@@ -31,8 +31,8 @@ export default function About({ handleHover, handleLeave, icon, cursorClass }) {
           onMouseLeave={handleLeave}
         />
       </div>
-      <div className="light__continer">
-        <div className="personal__container1">
+      <div className="light__container">
+        <div className="personal__content">
           <h2>Personal Bio</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
@@ -41,7 +41,7 @@ export default function About({ handleHover, handleLeave, icon, cursorClass }) {
             aliquid. Eligendi, ratione odit.
           </p>
         </div>
-        <div className="personal__container2">
+        <div className="personal__content">
           <h2>Work Bio</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
