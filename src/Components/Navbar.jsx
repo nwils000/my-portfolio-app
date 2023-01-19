@@ -18,7 +18,7 @@ export default function Navbar({ cursorClass }) {
       </div>
       <div className="nav__line line3">
         <h2 className="heading3">Projects</h2>
-        <Link className="nav__link">
+        <Link className="nav__link" to="/projects">
           <img src={circle} alt="" />
         </Link>
       </div>

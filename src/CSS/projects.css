@@ -1,0 +1,28 @@
+.projects__wrapper {
+  background-color: #d87692;
+  min-height: 100vh;
+}
+
+.projects__grid {
+  margin: 0 auto;
+  padding-top: 16rem;
+  padding-bottom: 2rem;
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.projects__container {
+  background-color: #e8ffee;
+  border-radius: 0.7rem;
+}
+
+.projects__content video {
+  width: 350px;
+  margin: 70px 15px 15px 15px;
+  background-color: white;
+  border-radius: 0.7rem;
+}

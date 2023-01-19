@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "../CSS/app.css";
 import Home from "./Home";
 import About from "./About";
+import Projects from "./Projects";
 import Contact from "./Contact";
 import whiteSwitch from "../Photos/whiteSwitch.png";
 import blackSwitch from "../Photos/blackSwitch.png";
@@ -18,6 +19,13 @@ function App() {
   function handleLeave() {
     setCursorClass("cursor");
     setIcon(blackSwitch);
+  }
+
+  function handleInputHover() {
+    setCursorClass("cursor-input-hovered");
+  }
+  function handleInputLeave() {
+    setCursorClass("cursor");
   }
 
   return (
@@ -36,8 +44,18 @@ function App() {
           }
         ></Route>
         <Route
+          path="/projects"
+          element={<Projects cursorClass={cursorClass} />}
+        ></Route>
+        <Route
           path="/contact"
-          element={<Contact cursorClass={cursorClass} />}
+          element={
+            <Contact
+              handleInputHover={handleInputHover}
+              handleInputLeave={handleInputLeave}
+              cursorClass={cursorClass}
+            />
+          }
         ></Route>
       </Routes>
     </div>
