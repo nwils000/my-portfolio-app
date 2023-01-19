@@ -5,19 +5,22 @@
 
 .projects__grid {
   margin: 0 auto;
-  padding-top: 16rem;
-  padding-bottom: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
   width: 900px;
-  display: grid;
-  grid-template-columns: repeat(2, 380px);
-  grid-template-rows: repeat(2, auto);
   gap: 1.2rem;
   justify-content: center;
+}
+
+.projects__wrapper1 {
 }
 
 .projects__container {
   background-color: #e8ffee;
   border-radius: 0.7rem;
+  width: 380px;
+  display: inline-block;
+  margin: 1rem;
 }
 
 .projects__content video {
@@ -25,4 +28,11 @@
   margin: 70px 15px 15px 15px;
   background-color: white;
   border-radius: 0.7rem;
+}
+
+.projects__content-learned p {
+  display: none;
+}
+.projects__content-learned__cicked p {
+  display: block;
 }
