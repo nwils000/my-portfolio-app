@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
 import birthdayDataApp from "../Videos/birthdayDataApp.mp4";
+import recipeListApp from "../Videos/recipeListApp.mp4";
+import flashcardApp from "../Videos/flashcardApp.mp4";
 
 export default function Projects({ cursorClass }) {
   const [Active1, setActive1] = useState(true);
@@ -33,9 +35,10 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
+            <h2>Project Title</h2>
             <video autoPlay muted loop src={birthdayDataApp}></video>
             <div className="projects__button-container">
-              <button onClick={handleClick1}>Learned</button>
+              <button onClick={handleClick1}>What I Learned</button>
               <button>Git</button>
             </div>
             <div
@@ -57,9 +60,10 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <video autoPlay muted loop src={birthdayDataApp}></video>
+            <h2>Project Title</h2>
+            <video autoPlay muted loop src={flashcardApp}></video>
             <div className="projects__button-container">
-              <button onClick={handleClick2}>Learned</button>
+              <button onClick={handleClick2}>What I Learned</button>
               <button>Git</button>
             </div>
             <div
@@ -81,9 +85,10 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
+            <h2>Project Title</h2>
             <video autoPlay muted loop src={birthdayDataApp}></video>
             <div className="projects__button-container">
-              <button onClick={handleClick3}>Learned</button>
+              <button onClick={handleClick3}>What I Learned</button>
               <button>Git</button>
             </div>
             <div
@@ -106,9 +111,10 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <video autoPlay muted loop src={birthdayDataApp}></video>
+            <h2>Project Title</h2>
+            <video autoPlay muted loop src={recipeListApp}></video>
             <div className="projects__button-container">
-              <button onClick={handleClick4}>Learned</button>
+              <button onClick={handleClick4}>What I Learned</button>
               <button>Git</button>
             </div>
             <div

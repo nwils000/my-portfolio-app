@@ -7,12 +7,9 @@
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 1rem;
-  width: 900px;
+  width: 840px;
   gap: 1.2rem;
   justify-content: center;
-}
-
-.projects__wrapper1 {
 }
 
 .projects__container {
@@ -21,18 +18,37 @@
   width: 380px;
   display: inline-block;
   margin: 1rem;
+  text-align: center;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects__container h2 {
+  margin: 1rem 1.5rem 0.5rem 1rem;
+  font-weight: 900;
 }
 
 .projects__content video {
   width: 350px;
-  margin: 70px 15px 15px 15px;
+  margin: 0 15px 0.4rem 15px;
   background-color: white;
   border-radius: 0.7rem;
+}
+
+.projects__button-container button:first-of-type {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  right: 20%;
+  margin-bottom: 0.5rem;
 }
 
 .projects__content-learned p {
   display: none;
 }
+
 .projects__content-learned__cicked p {
   display: block;
 }
