@@ -1,54 +1,65 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
 
 export default function About({ handleHover, handleLeave, icon, cursorClass }) {
-  const [switchActive, setSwitchActive] = useState(true);
-
   useEffect(() => {
     CursorAnimation();
   }, []);
 
-  function handleClick() {
-    switchActive ? setSwitchActive(false) : setSwitchActive(true);
-  }
-
   return (
-    <div className={switchActive ? "dark__wrapper" : "light__wrapper"}>
+    <div className="about__wrapper">
       <Navbar cursorClass={cursorClass} />
-      <div className="dark__content">
-        <h1>
-          Light Switch
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8595;
-        </h1>
-        <img
-          className="light-switch"
-          src={icon}
-          alt=""
-          onClick={handleClick}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
-        />
-      </div>
-      <div className="light__container">
-        <div className="personal__content">
-          <h2>Personal Bio</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            harum sapiente odit quisquam dolorem suscipit maxime sunt quis
-            beatae dolorum id pariatur voluptatem praesentium quidem qui
-            aliquid. Eligendi, ratione odit.
-          </p>
-        </div>
-        <div className="personal__content">
-          <h2>Work Bio</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            harum sapiente odit quisquam dolorem suscipit maxime sunt quis
-            beatae dolorum id pariatur voluptatem praesentium quidem qui
-            aliquid. Eligendi, ratione odit.
-          </p>
+      <div className="about__container">
+        <div className="about__content">
+          <h1>Hello,</h1>
+          <h2>I am a creator with a strong passion for web development</h2>
+          <h3>
+            Over the last year and half I have become obsessed with creating
+            beautiful, unique, and functional websites for a variety of
+            different purposes. My natural creativity and close attention to
+            detail have helped me excell quickly in this field.
+          </h3>
+          <h1>Skills</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>VS Code</li>
+            <li>Bootstrap</li>
+            <li>Sass</li>
+            <li>Redux</li>
+            <li>Git</li>
+            <li>Routing</li>
+            <li>Connecting to API's</li>
+            <li>Custom Fonts</li>
+            <li>Sprites</li>
+            <li>HandBrake</li>
+          </ul>
+
+          <h1>Why Hire Me?</h1>
+          <h3>Well, theres a few reasons</h3>
+          <h2>1:</h2>
+          <h3>
+            I have all the skills necesary to succeed in the job I'm applying
+            for. If theres any additional skills / speficic tools I need to
+            learn to work for you, I guarantee that I will learn those and
+            become efficient in them quickly
+          </h3>
+          <h2>2:</h2>
+          <h3>
+            I'm motivated. I'm motivated by my passion in web development. I'm
+            motivated by my wife and daughter to support them financially. I'm
+            motivated by my natural desire to excell in all that I do.
+          </h3>
+          <h2>3:</h2>
+          <h3>
+            I've been a great leader and I've also been a great follower. I have
+            good interpersonal skills. I know how to take and give compliment as
+            well as constructive criticism. I dont enjoy drama, you'll never
+            have a problem with my conduct in the work space.
+          </h3>
         </div>
       </div>
     </div>

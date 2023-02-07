@@ -1,78 +1,17 @@
-.dark__wrapper {
-  background-color: black;
-  height: 100vh;
-}
-
-.dark__wrapper h1 {
-  color: rgba(255, 255, 255, 0.822);
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.671);
-  font-size: 3.4rem;
-  margin: 0 auto;
-}
-
-.dark__wrapper .personal__content {
-  display: none;
-}
-
-.light__wrapper .light-switch {
-  display: none;
-}
-
-.light__wrapper {
+.about__wrapper {
   animation: changeBgBlue 10s linear infinite;
   height: 100vh;
 }
 
-.dark__content {
+.about h1 {
+}
+
+.about__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 99vw;
-  padding-top: 25vh;
-}
-
-.light__wrapper h1 {
-  display: none;
-}
-
-.light-switch {
-  height: 8rem;
-  width: 8rem;
-}
-
-.light-switch__wrapper {
-  width: 10rem;
-}
-
-.light__container {
-  display: flex;
   padding: 2rem;
-}
-
-.personal__content {
-  margin: 0 1rem 0 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: #ffffffe1;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.personal__content h2 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.cursor-hovered {
-  pointer-events: none;
-  position: fixed;
-  padding: 0.3rem;
-  background-color: rgb(0, 0, 0);
-  border-radius: 70%;
-  mix-blend-mode: soft-light;
-  transition: transform 0.3s ease;
-  transform: translate(-50%, -50%) scale(20);
-  background-color: rgba(255, 255, 255, 0.349);
+  width: 50%;
+  margin: 0 auto;
 }
 
 @keyframes changeBgBlue {
