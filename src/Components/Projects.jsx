@@ -40,7 +40,7 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Amazon Clone</h2>
-            <a href="https://amzin-clone.netlify.app/">
+            <a href="https://amzin-clone.netlify.app/" target="_blank">
               <video autoPlay muted loop src={amazonCloneApp}></video>
             </a>
             <div className="projects__button-container">
@@ -75,7 +75,12 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Flash Cards</h2>
-            <video autoPlay muted loop src={flashcardApp}></video>
+            <a
+              href="https://nathans-flashcard-app.netlify.app/"
+              target="_blank"
+            >
+              <video autoPlay muted loop src={flashcardApp}></video>
+            </a>
             <div className="projects__button-container">
               <button onClick={handleClick2}>What I Learned</button>
               <a href="/">
@@ -108,7 +113,12 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Birthday Global Events</h2>
-            <video autoPlay muted loop src={birthdayDataApp}></video>
+            <a
+              href="https://birthday-historical-data.netlify.app/"
+              target="_blank"
+            >
+              <video autoPlay muted loop src={birthdayDataApp}></video>
+            </a>
             <div className="projects__button-container">
               <button onClick={handleClick3}>What I Learned</button>
               <a href="/">
@@ -142,7 +152,9 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Recipe List</h2>
-            <video autoPlay muted loop src={recipeListApp}></video>
+            <a href="https://nathans-recipe-list.netlify.app/" target="_blank">
+              <video autoPlay muted loop src={recipeListApp}></video>
+            </a>
             <div className="projects__button-container">
               <button onClick={handleClick4}>What I Learned</button>
               <a href="/">
