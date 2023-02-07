@@ -5,6 +5,7 @@
     rgba(156, 231, 177, 1) 7%,
     rgba(147, 128, 196, 1) 93%
   );
+  min-height: 100vh;
 }
 
 .projects__grid {
@@ -13,7 +14,7 @@
   padding-top: 10rem;
   padding-bottom: 1rem;
   width: 840px;
-  gap: 1.2rem;
+  gap: 5rem;
   justify-content: center;
 }
 

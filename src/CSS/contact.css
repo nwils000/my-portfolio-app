@@ -29,9 +29,16 @@
   font-size: 4rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animated_text 10s ease-in-out infinite;
-  -moz-animation: animated_text 10s ease-in-out infinite;
-  -webkit-animation: animated_text 10s ease-in-out infinite;
+  animation: animated_text 10s ease-in-out infinite, slideIn 1.7s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes animated_text {
@@ -93,6 +100,16 @@
   border-radius: 10rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px,
     rgba(0, 0, 0, 0.116) 0px 4px 10px;
+  animation: slideInReverse 1.7s;
+}
+
+@keyframes slideInReverse {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .contact__input[type="submit"]:hover {
