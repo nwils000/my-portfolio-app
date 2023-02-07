@@ -44,8 +44,11 @@ export default function Projects({ cursorClass }) {
               <video autoPlay muted loop src={amazonCloneApp}></video>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick1}>What I Learned</button>
-              <a href="/">
+              <button onClick={handleClick1}>Skills Used</button>
+              <a
+                href="https://github.com/nwils000/amazon-clone-app"
+                target="_blank"
+              >
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}
@@ -82,8 +85,11 @@ export default function Projects({ cursorClass }) {
               <video autoPlay muted loop src={flashcardApp}></video>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick2}>What I Learned</button>
-              <a href="/">
+              <button onClick={handleClick2}>Skills Used</button>
+              <a
+                href="https://github.com/nwils000/flashcard-app"
+                target="_blank"
+              >
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}
@@ -120,8 +126,11 @@ export default function Projects({ cursorClass }) {
               <video autoPlay muted loop src={birthdayDataApp}></video>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick3}>What I Learned</button>
-              <a href="/">
+              <button onClick={handleClick3}>Skills Used</button>
+              <a
+                href="https://github.com/nwils000/birthday-data-app"
+                target="_blank"
+              >
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}
@@ -156,8 +165,11 @@ export default function Projects({ cursorClass }) {
               <video autoPlay muted loop src={recipeListApp}></video>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick4}>What I Learned</button>
-              <a href="/">
+              <button onClick={handleClick4}>Skills Used</button>
+              <a
+                href="https://github.com/nwils000/recipe-list-app"
+                target="_blank"
+              >
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}
