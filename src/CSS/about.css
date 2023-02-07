@@ -19,10 +19,9 @@
   position: relative;
   z-index: 3;
   width: 35vw;
-  height: 80vh;
+  height: 72vh;
   overflow: auto;
-  margin-top: 10rem;
-  margin-right: 2.5rem;
+  margin: 19.5vh 2.5rem 0 0;
 }
 
 .about__content::-webkit-scrollbar {

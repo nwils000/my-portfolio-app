@@ -5,6 +5,7 @@ import birthdayDataApp from "../Videos/birthdayDataApp.mp4";
 import recipeListApp from "../Videos/recipeListApp.mp4";
 import flashcardApp from "../Videos/flashcardApp.mp4";
 import amazonCloneApp from "../Videos/amazonCloneApp.mp4";
+import portfolioProject from "../Videos/portfolioProject.mp4";
 import gitLogo from "../Photos/gitLogo.png";
 import gitLogoWhite from "../Photos/gitLogoWhite.png";
 
@@ -168,6 +169,45 @@ export default function Projects({ cursorClass }) {
               <button onClick={handleClick4}>Skills Used</button>
               <a
                 href="https://github.com/nwils000/recipe-list-app"
+                target="_blank"
+              >
+                <img
+                  className="projects-git-hub__logo"
+                  src={gitHubLogo}
+                  alt="Git Hub logo"
+                  onMouseEnter={() => setGitHubLogo(gitLogoWhite)}
+                  onMouseLeave={() => setGitHubLogo(gitLogo)}
+                />
+              </a>
+            </div>
+            <div
+              className={
+                Active4
+                  ? "projects__content-learned"
+                  : "projects__content-learned__clicked"
+              }
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda tempora recusandae laborum natus repellat voluptatum
+                alias provident, incidunt, neque voluptatibus similique
+                reprehenderit? Officia deserunt debitis ab sed perferendis ea
+                amet?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="projects__container">
+          {" "}
+          <div className="projects__content">
+            <h2>Portfolio</h2>
+            <a href="https://nathan-wilson.netlify.app/" target="_blank">
+              <video autoPlay muted loop src={portfolioProject}></video>
+            </a>
+            <div className="projects__button-container">
+              <button onClick={handleClick4}>Skills Used</button>
+              <a
+                href="https://github.com/nwils000/my-portfolio-app"
                 target="_blank"
               >
                 <img
