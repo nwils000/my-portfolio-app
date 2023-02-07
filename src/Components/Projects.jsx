@@ -4,12 +4,16 @@ import CursorAnimation from "./CursorAnimation";
 import birthdayDataApp from "../Videos/birthdayDataApp.mp4";
 import recipeListApp from "../Videos/recipeListApp.mp4";
 import flashcardApp from "../Videos/flashcardApp.mp4";
+import amazonCloneApp from "../Videos/amazonCloneApp.mp4";
+import gitLogo from "../Photos/gitLogo.png";
+import gitLogoWhite from "../Photos/gitLogoWhite.png";
 
 export default function Projects({ cursorClass }) {
   const [Active1, setActive1] = useState(true);
   const [Active2, setActive2] = useState(true);
   const [Active3, setActive3] = useState(true);
   const [Active4, setActive4] = useState(true);
+  const [gitHubLogo, setGitHubLogo] = useState(gitLogo);
 
   useEffect(() => {
     CursorAnimation();
@@ -35,11 +39,19 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Project Title</h2>
-            <video autoPlay muted loop src={birthdayDataApp}></video>
+            <h2>Amazon Clone</h2>
+            <video autoPlay muted loop src={amazonCloneApp}></video>
             <div className="projects__button-container">
               <button onClick={handleClick1}>What I Learned</button>
-              <button>Git</button>
+              <a href="/">
+                <img
+                  className="projects-git-hub__logo"
+                  src={gitHubLogo}
+                  alt="Git Hub logo"
+                  onMouseEnter={() => setGitHubLogo(gitLogoWhite)}
+                  onMouseLeave={() => setGitHubLogo(gitLogo)}
+                />
+              </a>
             </div>
             <div
               className={
@@ -60,11 +72,19 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Project Title</h2>
+            <h2>Flash Cards</h2>
             <video autoPlay muted loop src={flashcardApp}></video>
             <div className="projects__button-container">
               <button onClick={handleClick2}>What I Learned</button>
-              <button>Git</button>
+              <a href="/">
+                <img
+                  className="projects-git-hub__logo"
+                  src={gitHubLogo}
+                  alt="Git Hub logo"
+                  onMouseEnter={() => setGitHubLogo(gitLogoWhite)}
+                  onMouseLeave={() => setGitHubLogo(gitLogo)}
+                />
+              </a>
             </div>
             <div
               className={
@@ -85,11 +105,19 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Project Title</h2>
+            <h2>Birthday Global Events</h2>
             <video autoPlay muted loop src={birthdayDataApp}></video>
             <div className="projects__button-container">
               <button onClick={handleClick3}>What I Learned</button>
-              <button>Git</button>
+              <a href="/">
+                <img
+                  className="projects-git-hub__logo"
+                  src={gitHubLogo}
+                  alt="Git Hub logo"
+                  onMouseEnter={() => setGitHubLogo(gitLogoWhite)}
+                  onMouseLeave={() => setGitHubLogo(gitLogo)}
+                />
+              </a>
             </div>
             <div
               className={
@@ -111,11 +139,19 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Project Title</h2>
+            <h2>Recipe List</h2>
             <video autoPlay muted loop src={recipeListApp}></video>
             <div className="projects__button-container">
               <button onClick={handleClick4}>What I Learned</button>
-              <button>Git</button>
+              <a href="/">
+                <img
+                  className="projects-git-hub__logo"
+                  src={gitHubLogo}
+                  alt="Git Hub logo"
+                  onMouseEnter={() => setGitHubLogo(gitLogoWhite)}
+                  onMouseLeave={() => setGitHubLogo(gitLogo)}
+                />
+              </a>
             </div>
             <div
               className={
