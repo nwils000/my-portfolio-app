@@ -1,6 +1,10 @@
 .projects__wrapper {
-  animation: changeBgRed 10s linear infinite;
-  min-height: 100vh;
+  background: rgb(156, 231, 177);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 231, 177, 1) 7%,
+    rgba(147, 128, 196, 1) 93%
+  );
 }
 
 .projects__grid {
@@ -44,7 +48,7 @@
   margin: 0 15px 0.4rem 15px;
   background-color: white;
   border-radius: 0.7rem;
-  cursor: default;
+  cursor: pointer;
 }
 
 .projects__button-container {
@@ -92,19 +96,4 @@
 
 .projects-git-hub__logo:hover {
   cursor: pointer;
-}
-
-@keyframes changeBgRed {
-  0% {
-    background-color: #d87692;
-  }
-  35% {
-    background-color: #92c1e0;
-  }
-  70% {
-    background-color: #93f0ab;
-  }
-  100% {
-    background-color: #d87692;
-  }
 }

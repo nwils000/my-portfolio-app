@@ -40,7 +40,9 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Amazon Clone</h2>
-            <video autoPlay muted loop src={amazonCloneApp}></video>
+            <a href="https://amzin-clone.netlify.app/">
+              <video autoPlay muted loop src={amazonCloneApp}></video>
+            </a>
             <div className="projects__button-container">
               <button onClick={handleClick1}>What I Learned</button>
               <a href="/">
