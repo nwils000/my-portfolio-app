@@ -1,6 +1,6 @@
 .nav__container {
   display: grid;
-  grid-template-columns: 28vw 22.6vw 23vw 20.5vw;
+  grid-template-columns: 28vw 23vw 23vw 21.2vw;
   height: 2px;
   position: fixed;
   margin: 0 8vw 0 2.4vw;
