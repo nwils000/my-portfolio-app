@@ -95,20 +95,8 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .nav__container {
-    grid-template-columns: 39vw 22.6vw 23vw 21vw;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .nav__container {
-    grid-template-columns: 39vw 22.6vw 25vw 22vw;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .nav__container {
-    grid-template-columns: 39vw 24vw 29vw 23vw;
+    display: none;
   }
 }
