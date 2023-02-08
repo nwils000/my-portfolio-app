@@ -116,10 +116,10 @@
 
 @keyframes gridSlideIn {
   0% {
-    transform: translateX(-170%);
+    transform: translateX(-200%);
   }
   100% {
-    transform: translateX(-90%);
+    transform: translateX(-70%);
   }
 }
 
@@ -129,7 +129,7 @@
   display: grid;
   gap: 0.6rem;
   position: absolute;
-  right: 63%;
+  right: 150%;
   height: 77vh;
   overflow: auto;
 }
@@ -160,7 +160,7 @@
   display: grid;
   gap: 0.6rem;
   position: absolute;
-  right: 63%;
+  right: 150%;
   height: 77vh;
   overflow: auto;
 }
@@ -197,7 +197,7 @@
       transform: translateX(-170%);
     }
     100% {
-      transform: translateX(-40%);
+      transform: translateX(25%);
     }
   }
 }

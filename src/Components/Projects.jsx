@@ -8,6 +8,11 @@ import amazonCloneApp from "../Videos/amazonCloneApp.mp4";
 import portfolioProject from "../Videos/portfolioProject.mp4";
 import gitLogo from "../Photos/gitLogo.png";
 import gitLogoWhite from "../Photos/gitLogoWhite.png";
+import birthday from "../Photos/birthday.png";
+import amzin from "../Photos/amzin.png";
+import recipes from "../Photos/recipes.png";
+import flashcard from "../Photos/flashcard.png";
+import portfolio from "../Photos/portfolio.png";
 
 export default function Projects({ cursorClass }) {
   const [Active1, setActive1] = useState(true);
@@ -47,6 +52,11 @@ export default function Projects({ cursorClass }) {
               rel="noreferrer"
             >
               <video autoPlay muted loop src={amazonCloneApp}></video>
+              <img
+                className="screenshot"
+                src={amzin}
+                alt="screenshot of project"
+              ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick1}>Skills Used</button>
@@ -92,6 +102,11 @@ export default function Projects({ cursorClass }) {
               rel="noreferrer"
             >
               <video autoPlay muted loop src={flashcardApp}></video>
+              <img
+                className="screenshot"
+                src={flashcard}
+                alt="screenshot of project"
+              ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick2}>Skills Used</button>
@@ -134,6 +149,11 @@ export default function Projects({ cursorClass }) {
               rel="noreferrer"
             >
               <video autoPlay muted loop src={birthdayDataApp}></video>
+              <img
+                className="screenshot"
+                src={birthday}
+                alt="screenshot of project"
+              ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick3}>Skills Used</button>
@@ -178,6 +198,11 @@ export default function Projects({ cursorClass }) {
               rel="noreferrer"
             >
               <video autoPlay muted loop src={recipeListApp}></video>
+              <img
+                className="screenshot"
+                src={recipes}
+                alt="screenshot of project"
+              ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick4}>Skills Used</button>
@@ -222,6 +247,11 @@ export default function Projects({ cursorClass }) {
               rel="noreferrer"
             >
               <video autoPlay muted loop src={portfolioProject}></video>
+              <img
+                className="screenshot"
+                src={portfolio}
+                alt="screenshot of project"
+              ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick4}>Skills Used</button>
