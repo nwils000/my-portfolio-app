@@ -77,3 +77,43 @@
     background-color: #ffffff;
   }
 }
+
+@media screen and (max-width: 1070px) {
+  .home__name h1 {
+    font-size: 3.3rem;
+  }
+
+  .home__name h2 {
+    font-size: 1.5rem;
+    left: 116px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+
+  .home__name h1 {
+    font-size: 2rem;
+  }
+
+  .home__name h2 {
+    font-size: 1.05rem;
+    bottom: 27px;
+    left: 67px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home__name h1 {
+    font-size: 1.44rem;
+  }
+
+  .home__name h2 {
+    font-size: 0.75rem;
+    bottom: 16px;
+    left: 52px;
+  }
+}

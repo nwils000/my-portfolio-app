@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 1000px) {
   .nav__container {
-    grid-template-columns: 35vw 22.6vw 23vw 22vw;
+    grid-template-columns: 35vw 22.6vw 25vw 21vw;
     margin: 0;
   }
 }
@@ -98,6 +98,17 @@
 @media screen and (max-width: 650px) {
   .nav__container {
     grid-template-columns: 39vw 22.6vw 23vw 21vw;
-    margin: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .nav__container {
+    grid-template-columns: 39vw 22.6vw 25vw 22vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav__container {
+    grid-template-columns: 39vw 24vw 29vw 23vw;
   }
 }

@@ -38,3 +38,11 @@ body {
     background-color: #92c1e0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    cursor: default;
+  }
+}
