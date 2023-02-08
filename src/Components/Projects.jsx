@@ -95,7 +95,7 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Flash Cards</h2>
+            <h2>Flashcards</h2>
             <a
               href="https://nathans-flashcard-app.netlify.app/"
               target="_blank"
