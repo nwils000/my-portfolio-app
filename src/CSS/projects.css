@@ -147,11 +147,25 @@
 
   .projects-git-hub__logo {
     width: 65px;
-    bottom: 21px;
+    bottom: 19px;
     left: 24%;
   }
 
   .projects__grid {
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .projects__button-container button {
+    font-size: 0.65rem;
+    padding: 5px 12px;
+    top: 9px;
+    right: -5%;
+  }
+  .projects-git-hub__logo {
+    width: 45px;
+    bottom: 14px;
+    left: 30%;
   }
 }
