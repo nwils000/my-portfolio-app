@@ -52,16 +52,17 @@ export default function About({ cursorClass }) {
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React.js</li>
-            <li>VS Code</li>
-            <li>Bootstrap</li>
-            <li>Sass</li>
             <li>Redux</li>
             <li>Git</li>
-            <li>Routing</li>
-            <li>Connecting to API's</li>
-            <li>Custom Fonts</li>
-            <li>Sprites</li>
+            <li>Bootstrap</li>
+            <li>CSS Sprites</li>
+            <li>Sass</li>
+            <li>VS Code</li>
             <li>HandBrake</li>
+            <li>Communicating with API's</li>
+            <li>DOM Manipulation</li>
+            <li>Routing</li>
+            <li>Custom Fonts</li>
           </ul>
 
           <h2>Why Hire Me?</h2>

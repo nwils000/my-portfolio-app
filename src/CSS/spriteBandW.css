@@ -1,26 +1,27 @@
 .spriteBandW {
   background: url("../Photos/spriteBandW.png") no-repeat top left;
-  width: 450px;
-  height: 450px;
-}
-.spriteBandW.IMG_6649 {
-  background-position: 0 -200px;
-}
-.spriteBandW.IMG_6650 {
-  background-position: -460px -160px;
-}
-.spriteBandW.IMG_6651 {
-  background-position: -920px -190px;
-}
-.spriteBandW.IMG_6653 {
-  background-position: -1380px -280px;
-}
-.spriteBandW.IMG_6655 {
-  background-position: -1840px -170px;
+  width: 200px;
+  height: 200px;
+  opacity: 0.9;
 }
 .spriteBandW.IMG_6658 {
-  background-position: -2300px -200px;
+  background-position: -1050px -80px;
+}
+.spriteBandW.IMG_6655 {
+  background-position: -840px -75px;
+}
+.spriteBandW.IMG_6653 {
+  background-position: -630px -120px;
+}
+.spriteBandW.IMG_6651 {
+  background-position: -420px -84px;
+}
+.spriteBandW.IMG_6649 {
+  background-position: 0 -86px;
 }
 .spriteBandW.IMG_6659 {
-  background-position: -2760px -230px;
+  background-position: -1260px -110px;
+}
+.spriteBandW.IMG_6650 {
+  background-position: -210px -80px;
 }

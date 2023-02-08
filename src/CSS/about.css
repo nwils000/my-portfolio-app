@@ -2,7 +2,7 @@
   background: rgb(208, 164, 149);
   background: linear-gradient(
     51deg,
-    rgba(208, 164, 149, 1) 0%,
+    rgba(208, 164, 149, 1) 7%,
     rgba(34, 111, 129, 1) 100%
   );
   min-height: 100vh;
@@ -19,10 +19,10 @@
   position: relative;
   z-index: 3;
   width: 35vw;
-  height: 72vh;
+  height: 77vh;
   overflow: auto;
   margin: 19.5vh 2.5rem 0 0;
-  animation: aboutContentFadeIn 2s;
+  animation: aboutContentFadeIn 3s;
   animation-fill-mode: forwards;
 }
 
@@ -105,4 +105,89 @@
 
 .reason__block:last-of-type {
   margin-bottom: 2rem;
+}
+
+.about-pictures__wrapper {
+  animation: gridSlideIn 1.7s forwards;
+  height: 77vh;
+  margin-top: 19.5vh;
+  width: 200px;
+  position: relative;
+}
+
+@keyframes gridSlideIn {
+  0% {
+    transform: translateX(-170%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+.about-pictures__grid {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.03);
+  display: grid;
+  gap: 0.6rem;
+  position: absolute;
+  right: 63%;
+  height: 77vh;
+  overflow: auto;
+}
+
+.about-pictures__grid::-webkit-scrollbar {
+  width: 5px;
+}
+
+.about-pictures__grid::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.411);
+  border-radius: 10px;
+}
+
+.about-pictures__grid::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.about-pictures__grid::-webkit-scrollbar-thumb:hover {
+  background: #ffffffbe;
+}
+
+.about-pictures__grid .spriteBandW {
+  display: none;
+}
+
+.about-pictures__grid__BandW {
+  display: grid;
+  gap: 0.6rem;
+  position: absolute;
+  right: 63%;
+  height: 77vh;
+  overflow: auto;
+}
+
+.about-pictures__grid__BandW::-webkit-scrollbar {
+  width: 5px;
+}
+
+.about-pictures__grid__BandW::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.411);
+  border-radius: 10px;
+}
+
+.about-pictures__grid__BandW::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.about-pictures__grid__BandW::-webkit-scrollbar-thumb:hover {
+  background: #ffffffbe;
+}
+
+.about-pictures__grid__BandW .spriteClear {
+  display: none;
+}
+
+.about-pictures__grid .spriteClear {
+  cursor: default;
 }
