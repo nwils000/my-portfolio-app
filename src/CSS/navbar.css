@@ -5,6 +5,10 @@
   position: fixed;
   margin: 0 8vw 0 2.4vw;
 }
+.nav__container .dropdown__active,
+.nav__container .dropdown {
+  display: none;
+}
 
 .nav__line {
   background-color: rgba(255, 255, 255, 0.4);
@@ -96,7 +100,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav__container {
+  .nav__line {
+    display: none;
+  }
+  .nav__container .dropdown__active,
+  .nav__container .dropdown {
+    display: block;
+  }
+  .nav__container .dropdown__active .circle {
+    display: none;
+  }
+  .nav__container .dropdown .cross {
     display: none;
   }
 }
