@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import circle from "../Photos/circle.png";
+import circle2 from "../Photos/circleDropdown.png";
+import cross from "../Photos/cross.png";
 
 export default function Navbar({ cursorClass }) {
   const [dropdownClass, setDropdownClass] = useState("dropdown");
@@ -8,19 +10,23 @@ export default function Navbar({ cursorClass }) {
   return (
     <div className="nav__container">
       <div className={dropdownClass}>
-        <button
+        <div
           onClick={() => setDropdownClass("dropdown__active")}
           className="circle"
         >
-          <img src="" alt="" />
-        </button>
+          <div></div>
+          <div></div>
+          <img src={circle2} alt="" />
+        </div>
         <div className="cross">
-          <button onClick={() => setDropdownClass("dropdown")}>
-            <img src="" alt="" />
-          </button>
-          <div className="dropdown-links__flex">
+          <div className="dropdown-flex">
+            <div onClick={() => setDropdownClass("dropdown")}>
+              <img src={cross} alt="" />
+            </div>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
+          </div>
+          <div className="dropdown-flex-second-row">
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </div>
