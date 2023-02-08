@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
+import birthdayDataApp from "../Videos/birthdayDataApp.mp4";
+import recipeListApp from "../Videos/recipeListApp.mp4";
+import flashcardApp from "../Videos/flashcardApp.mp4";
+import amazonCloneApp from "../Videos/amazonCloneApp.mp4";
+import portfolioProject from "../Videos/portfolioProject.mp4";
 import gitLogo from "../Photos/gitLogo.png";
 import gitLogoWhite from "../Photos/gitLogoWhite.png";
 import birthday from "../Photos/birthday.png";
@@ -15,9 +20,12 @@ export default function Projects({ cursorClass }) {
   const [Active3, setActive3] = useState(true);
   const [Active4, setActive4] = useState(true);
   const [gitHubLogo, setGitHubLogo] = useState(gitLogo);
+  const [autoplay, setAutoplay] = useState(true);
 
   useEffect(() => {
     CursorAnimation();
+    var w = window.innerWidth;
+    if (w <= 768) setAutoplay(false);
   }, []);
 
   function handleClick1() {
@@ -46,6 +54,12 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
+              <video
+                autoPlay={autoplay}
+                muted
+                loop
+                src={amazonCloneApp}
+              ></video>
               <img
                 className="screenshot"
                 src={amzin}
@@ -95,6 +109,7 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
+              <video autoPlay={autoplay} muted loop src={flashcardApp}></video>
               <img
                 className="screenshot"
                 src={flashcard}
@@ -141,6 +156,12 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
+              <video
+                autoPlay={autoplay}
+                muted
+                loop
+                src={birthdayDataApp}
+              ></video>
               <img
                 className="screenshot"
                 src={birthday}
@@ -189,6 +210,7 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
+              <video autoPlay={autoplay} muted loop src={recipeListApp}></video>
               <img
                 className="screenshot"
                 src={recipes}
@@ -237,6 +259,12 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
+              <video
+                autoPlay={autoplay}
+                muted
+                loop
+                src={portfolioProject}
+              ></video>
               <img
                 className="screenshot"
                 src={portfolio}

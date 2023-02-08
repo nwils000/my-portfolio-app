@@ -37,11 +37,7 @@
 }
 
 .screenshot {
-  display: block;
-  width: 800px;
-  margin: 0 15px 0.4rem 15px;
-  border-radius: 0.7rem;
-  cursor: pointer;
+  display: none;
 }
 
 .projects__container h2 {
@@ -50,6 +46,14 @@
   cursor: default;
   font-size: 2.5rem;
   text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+.projects__content video {
+  width: 800px;
+  margin: 0 15px 0.4rem 15px;
+  background-color: white;
+  border-radius: 0.7rem;
+  cursor: pointer;
 }
 
 .projects__button-container {
@@ -106,6 +110,20 @@
 
 .projects-git-hub__logo:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__content a video {
+    display: none;
+  }
+
+  .screenshot {
+    display: block;
+    width: 800px;
+    margin: 0 15px 0.4rem 15px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 845px) {
