@@ -23,6 +23,7 @@ export default function Projects({ cursorClass }) {
 
   useEffect(() => {
     CursorAnimation();
+    disableAutoPlay();
   }, []);
 
   function handleClick1() {
@@ -38,6 +39,16 @@ export default function Projects({ cursorClass }) {
     Active4 ? setActive4(false) : setActive4(true);
   }
 
+  function disableAutoPlay() {
+    const vw = Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    );
+    if (vw < 769) {
+      document.getElementById("video").removeAttribute("autoPlay");
+    }
+  }
+
   return (
     <div className="projects__wrapper">
       <Navbar cursorClass={cursorClass} />
@@ -51,7 +62,13 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video autoPlay muted loop src={amazonCloneApp}></video>
+              <video
+                id="video"
+                autoPlay
+                muted
+                loop
+                src={amazonCloneApp}
+              ></video>
               <img
                 className="screenshot"
                 src={amzin}
@@ -101,7 +118,7 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video autoPlay muted loop src={flashcardApp}></video>
+              <video id="video" autoPlay muted loop src={flashcardApp}></video>
               <img
                 className="screenshot"
                 src={flashcard}
@@ -148,7 +165,13 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video autoPlay muted loop src={birthdayDataApp}></video>
+              <video
+                id="video"
+                autoPlay
+                muted
+                loop
+                src={birthdayDataApp}
+              ></video>
               <img
                 className="screenshot"
                 src={birthday}
@@ -197,7 +220,7 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video autoPlay muted loop src={recipeListApp}></video>
+              <video id="video" autoPlay muted loop src={recipeListApp}></video>
               <img
                 className="screenshot"
                 src={recipes}
@@ -246,7 +269,13 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video autoPlay muted loop src={portfolioProject}></video>
+              <video
+                id="video"
+                autoPlay
+                muted
+                loop
+                src={portfolioProject}
+              ></video>
               <img
                 className="screenshot"
                 src={portfolio}
