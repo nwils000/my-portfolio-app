@@ -41,7 +41,11 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Amazon Clone</h2>
-            <a href="https://amzin-clone.netlify.app/" target="_blank">
+            <a
+              href="https://amzin-clone.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <video autoPlay muted loop src={amazonCloneApp}></video>
             </a>
             <div className="projects__button-container">
@@ -49,6 +53,7 @@ export default function Projects({ cursorClass }) {
               <a
                 href="https://github.com/nwils000/amazon-clone-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="projects-git-hub__logo"
@@ -84,6 +89,7 @@ export default function Projects({ cursorClass }) {
             <a
               href="https://nathans-flashcard-app.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               <video autoPlay muted loop src={flashcardApp}></video>
             </a>
@@ -92,6 +98,7 @@ export default function Projects({ cursorClass }) {
               <a
                 href="https://github.com/nwils000/flashcard-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="projects-git-hub__logo"
@@ -124,6 +131,7 @@ export default function Projects({ cursorClass }) {
             <a
               href="https://birthday-historical-data.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               <video autoPlay muted loop src={birthdayDataApp}></video>
             </a>
@@ -132,6 +140,7 @@ export default function Projects({ cursorClass }) {
               <a
                 href="https://github.com/nwils000/birthday-data-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="projects-git-hub__logo"
@@ -163,7 +172,11 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Recipe List</h2>
-            <a href="https://nathans-recipe-list.netlify.app/" target="_blank">
+            <a
+              href="https://nathans-recipe-list.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <video autoPlay muted loop src={recipeListApp}></video>
             </a>
             <div className="projects__button-container">
@@ -171,6 +184,7 @@ export default function Projects({ cursorClass }) {
               <a
                 href="https://github.com/nwils000/recipe-list-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="projects-git-hub__logo"
@@ -202,7 +216,11 @@ export default function Projects({ cursorClass }) {
           {" "}
           <div className="projects__content">
             <h2>Portfolio</h2>
-            <a href="https://nathan-wilson.netlify.app/" target="_blank">
+            <a
+              href="https://nathan-wilson.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <video autoPlay muted loop src={portfolioProject}></video>
             </a>
             <div className="projects__button-container">
@@ -210,6 +228,7 @@ export default function Projects({ cursorClass }) {
               <a
                 href="https://github.com/nwils000/my-portfolio-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="projects-git-hub__logo"
