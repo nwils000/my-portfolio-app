@@ -1,8 +1,12 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
 
-export default function About({ handleHover, handleLeave, icon, cursorClass }) {
+export default function About({ cursorClass }) {
+  const [pictureClass, setPictureClass] = useState(
+    "about-pictures__grid__BandW"
+  );
+
   useEffect(() => {
     CursorAnimation();
   }, []);
@@ -11,9 +15,31 @@ export default function About({ handleHover, handleLeave, icon, cursorClass }) {
     <div className="about__wrapper">
       <Navbar cursorClass={cursorClass} />
       <div className="about__container">
+        <div className="about-pictures__wrapper">
+          <div
+            onMouseEnter={() => setPictureClass("about-pictures__grid")}
+            onMouseLeave={() => setPictureClass("about-pictures__grid__BandW")}
+            className={pictureClass}
+          >
+            <div className="spriteBandW IMG_6658"></div>
+            <div className="spriteBandW IMG_6655"></div>
+            <div className="spriteBandW IMG_6653"></div>
+            <div className="spriteBandW IMG_6651"></div>
+            <div className="spriteBandW IMG_6649"></div>
+            <div className="spriteBandW IMG_6659"></div>
+            <div className="spriteBandW IMG_6650"></div>
+            <div className="spriteClear IMG_6657"></div>
+            <div className="spriteClear IMG_6656"></div>
+            <div className="spriteClear IMG_6654"></div>
+            <div className="spriteClear IMG_6660"></div>
+            <div className="spriteClear IMG_6647"></div>
+            <div className="spriteClear IMG_6652"></div>
+            <div className="spriteClear IMG_6661"></div>
+          </div>
+        </div>
         <div className="about__content">
           <h1>Hello,</h1>
-          <h2>I am a creator with a strong passion for web development.</h2>
+          <h2>I'm a creator with a strong passion for web development.</h2>
           <h3>
             Over the last year and a half, I have become obsessed with creating
             beautiful, unique, and functional websites. My natural creativity

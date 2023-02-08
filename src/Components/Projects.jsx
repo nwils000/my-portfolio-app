@@ -67,10 +67,12 @@ export default function Projects({ cursorClass }) {
               }
             >
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-                corporis consequatur ex cum doloremque labore perferendis
-                voluptates natus nesciunt, aperiam quaerat iste? Distinctio
-                facere maxime dicta rerum. Commodi, debitis cumque!
+                1. CSS Sprites <br />
+                2. Large arrays of object
+                <br />
+                3. State management
+                <br />
+                4. DOM manipulation
               </p>
             </div>
           </div>
@@ -108,10 +110,9 @@ export default function Projects({ cursorClass }) {
               }
             >
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-                corporis consequatur ex cum doloremque labore perferendis
-                voluptates natus nesciunt, aperiam quaerat iste? Distinctio
-                facere maxime dicta rerum. Commodi, debitis cumque!
+                1. Communicating with API <br />
+                2. CSS Animations <br />
+                3. Dynamic classes using JavaScript
               </p>
             </div>
           </div>
@@ -149,11 +150,11 @@ export default function Projects({ cursorClass }) {
               }
             >
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda tempora recusandae laborum natus repellat voluptatum
-                alias provident, incidunt, neque voluptatibus similique
-                reprehenderit? Officia deserunt debitis ab sed perferendis ea
-                amet?
+                1. State management
+                <br />
+                2. Communicating with API
+                <br />
+                3. React hooks such as useEffect and useRef
               </p>
             </div>
           </div>
@@ -188,11 +189,11 @@ export default function Projects({ cursorClass }) {
               }
             >
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda tempora recusandae laborum natus repellat voluptatum
-                alias provident, incidunt, neque voluptatibus similique
-                reprehenderit? Officia deserunt debitis ab sed perferendis ea
-                amet?
+                1. useRef React hook
+                <br />
+                2. JavaScript methods to create objects and filter arrays
+                <br />
+                3. Saving to local storage
               </p>
             </div>
           </div>
@@ -227,11 +228,13 @@ export default function Projects({ cursorClass }) {
               }
             >
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Assumenda tempora recusandae laborum natus repellat voluptatum
-                alias provident, incidunt, neque voluptatibus similique
-                reprehenderit? Officia deserunt debitis ab sed perferendis ea
-                amet?
+                1. Creating custom cursor effects
+                <br />
+                2. CSS animations
+                <br />
+                3. Optimized video performance
+                <br />
+                4. Manipulating the DOM
               </p>
             </div>
           </div>

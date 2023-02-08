@@ -84,8 +84,17 @@
   display: none;
 }
 
-.projects__content-learned__cicked p {
+.projects__content-learned__clicked p {
+  text-align: left;
   display: block;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
+.projects__content-learned__clicked p:hover {
+  cursor: default;
 }
 
 .projects-git-hub__logo {

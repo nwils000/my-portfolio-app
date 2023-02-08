@@ -1,0 +1,26 @@
+.spriteClear {
+  background: url("../Photos/spriteClear.png") no-repeat top left;
+  width: 450px;
+  height: 450px;
+}
+.spriteClear.IMG_6652 {
+  background-position: 0 -230px;
+}
+.spriteClear.IMG_6647 {
+  background-position: -460px -200px;
+}
+.spriteClear.IMG_6654 {
+  background-position: -920px -280px;
+}
+.spriteClear.IMG_6656 {
+  background-position: -1380px -170px;
+}
+.spriteClear.IMG_6657 {
+  background-position: -1840px -200px;
+}
+.spriteClear.IMG_6660 {
+  background-position: -2300px -190px;
+}
+.spriteClear.IMG_6661 {
+  background-position: -2760px -160px;
+}
