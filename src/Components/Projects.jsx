@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
-import birthdayDataApp from "../Videos/birthdayDataApp.mp4";
-import recipeListApp from "../Videos/recipeListApp.mp4";
-import flashcardApp from "../Videos/flashcardApp.mp4";
-import amazonCloneApp from "../Videos/amazonCloneApp.mp4";
-import portfolioProject from "../Videos/portfolioProject.mp4";
 import gitLogo from "../Photos/gitLogo.png";
 import gitLogoWhite from "../Photos/gitLogoWhite.png";
 import birthday from "../Photos/birthday.png";
@@ -23,7 +18,6 @@ export default function Projects({ cursorClass }) {
 
   useEffect(() => {
     CursorAnimation();
-    disableAutoPlay();
   }, []);
 
   function handleClick1() {
@@ -39,16 +33,6 @@ export default function Projects({ cursorClass }) {
     Active4 ? setActive4(false) : setActive4(true);
   }
 
-  function disableAutoPlay() {
-    const vw = Math.max(
-      document.documentElement.clientWidth || 0,
-      window.innerWidth || 0
-    );
-    if (vw < 769) {
-      document.getElementById("video").removeAttribute("autoPlay");
-    }
-  }
-
   return (
     <div className="projects__wrapper">
       <Navbar cursorClass={cursorClass} />
@@ -62,13 +46,6 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video
-                id="video"
-                autoPlay
-                muted
-                loop
-                src={amazonCloneApp}
-              ></video>
               <img
                 className="screenshot"
                 src={amzin}
@@ -118,7 +95,6 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video id="video" autoPlay muted loop src={flashcardApp}></video>
               <img
                 className="screenshot"
                 src={flashcard}
@@ -165,13 +141,6 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video
-                id="video"
-                autoPlay
-                muted
-                loop
-                src={birthdayDataApp}
-              ></video>
               <img
                 className="screenshot"
                 src={birthday}
@@ -220,7 +189,6 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video id="video" autoPlay muted loop src={recipeListApp}></video>
               <img
                 className="screenshot"
                 src={recipes}
@@ -269,13 +237,6 @@ export default function Projects({ cursorClass }) {
               target="_blank"
               rel="noreferrer"
             >
-              <video
-                id="video"
-                autoPlay
-                muted
-                loop
-                src={portfolioProject}
-              ></video>
               <img
                 className="screenshot"
                 src={portfolio}
