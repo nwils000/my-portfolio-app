@@ -211,9 +211,15 @@
       transform: translateX(-20%);
     }
   }
+
+  .about__wrapper {
+    max-height: 100vh;
+  }
+
   .about-pictures__wrapper {
     display: none;
   }
+
   .about__content {
     margin: 19.5vh 2.5rem 0 2.5rem;
     width: auto;
