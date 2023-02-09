@@ -215,8 +215,11 @@
     display: none;
   }
   .about__content {
-    margin: 14vh 2.5rem 2.5rem 2.5rem;
+    margin: 16vh 2.5rem 2.5rem 2.5rem;
     width: auto;
+  }
+  .about__content h2 {
+    margin-top: 3.6rem;
   }
 }
 
