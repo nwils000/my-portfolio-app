@@ -211,22 +211,13 @@
       transform: translateX(-20%);
     }
   }
-
   .about-pictures__wrapper {
     display: none;
   }
-
   .about__content {
-    margin: 17vh 2.5rem 2.5rem 2.5rem;
+    margin: 19.5vh 2.5rem 0 2.5rem;
     width: auto;
-  }
-
-  .about__content h1 {
-    font-size: 4.7rem;
-  }
-
-  .about__content h2 {
-    margin-top: 3rem;
+    height: 78vh;
   }
 }
 
@@ -244,7 +235,6 @@
   }
   .about__content h2 {
     font-size: 1.3rem;
-    margin-top: 2.5rem;
   }
   .about__content h3 {
     font-size: 0.75rem;
