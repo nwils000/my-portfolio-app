@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
 import "../CSS/app.css";
 import Home from "./Home";
 import About from "./About";
@@ -30,34 +29,21 @@ function App() {
 
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home cursorClass={cursorClass} />}></Route>
-        <Route
-          path="/about"
-          element={
-            <About
-              handleHover={handleHover}
-              handleLeave={handleLeave}
-              icon={icon}
-              cursorClass={cursorClass}
-            />
-          }
-        ></Route>
-        <Route
-          path="/projects"
-          element={<Projects cursorClass={cursorClass} />}
-        ></Route>
-        <Route
-          path="/contact"
-          element={
-            <Contact
-              handleInputHover={handleInputHover}
-              handleInputLeave={handleInputLeave}
-              cursorClass={cursorClass}
-            />
-          }
-        ></Route>
-      </Routes>
+      <Home cursorClass={cursorClass} />
+      <About
+        handleHover={handleHover}
+        handleLeave={handleLeave}
+        icon={icon}
+        cursorClass={cursorClass}
+      />
+
+      <Projects cursorClass={cursorClass} />
+
+      <Contact
+        handleInputHover={handleInputHover}
+        handleInputLeave={handleInputLeave}
+        cursorClass={cursorClass}
+      />
     </div>
   );
 }

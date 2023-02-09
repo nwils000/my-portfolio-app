@@ -35,7 +35,7 @@ export default function Contact({
   };
 
   return (
-    <div className="contact__wrapper">
+    <div className="contact__wrapper" id="contact">
       <Navbar cursorClass={cursorClass} />
       <div className="form__container">
         <h1>nwils000@gmail.com</h1>

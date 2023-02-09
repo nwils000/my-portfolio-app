@@ -7,7 +7,7 @@ export default function Home({ cursorClass }) {
     CursorAnimation();
   }, []);
   return (
-    <div className="home__wrapper">
+    <div className="home__wrapper" id="home">
       <div className="name__wrapper">
         <Navbar cursorClass={cursorClass} />
         <div href="#" className="hover-this">

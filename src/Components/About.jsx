@@ -12,7 +12,7 @@ export default function About({ cursorClass }) {
   }, []);
 
   return (
-    <div className="about__wrapper">
+    <div className="about__wrapper" id="about">
       <Navbar cursorClass={cursorClass} />
       <div className="about__container">
         <div className="about-pictures__wrapper">
@@ -41,9 +41,9 @@ export default function About({ cursorClass }) {
           <h1>Hello,</h1>
           <h2>I'm a Front-end Web Developer.</h2>
           <h3>
-            I can create the front end of any website. I'm skilled in HTML, CSS,
-            JavaScript, and the frameworks/libraries listed below. I primarily
-            work with React and am willing to work with other libraries.
+            I'm skilled in HTML, CSS, JavaScript, and the frameworks/libraries
+            listed below. I primarily work with React and am willing to work
+            with other libraries.
           </h3>
           <h2>Skills</h2>
           <ul>

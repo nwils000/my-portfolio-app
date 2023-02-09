@@ -64,7 +64,7 @@ export default function Projects({ cursorClass }) {
   }
 
   return (
-    <div className="projects__wrapper">
+    <div className="projects__wrapper" id="projects">
       <Navbar cursorClass={cursorClass} />
       <div className="projects__grid">
         <div className="projects__container">
