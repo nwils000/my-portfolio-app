@@ -9,7 +9,7 @@
 }
 
 .about__container {
-  width: 100vw;
+  width: 100v%;
   display: flex;
   justify-content: right;
   right: 0;

@@ -6,7 +6,7 @@
     rgba(147, 128, 196, 1) 93%
   );
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
 }
 
 .projects__grid {

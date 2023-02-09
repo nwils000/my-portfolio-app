@@ -3,7 +3,7 @@
   grid-template-columns: 28vw 23vw 23vw 21.2vw;
   height: 2px;
   position: fixed;
-  margin: 0 8vw 0 2.4vw;
+  margin: 0 0 0 2.4vw;
 }
 .nav__container .dropdown__active,
 .nav__container .dropdown {
