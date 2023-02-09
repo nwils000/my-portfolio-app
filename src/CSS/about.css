@@ -84,29 +84,6 @@
   word-spacing: 1px;
 }
 
-.about__content h4 {
-  display: inline;
-  font-weight: 400;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 0.7rem;
-}
-
-.hire-me__intro {
-  color: white;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.reason__block {
-  margin-top: 1.3rem;
-}
-
-.reason__block:last-of-type {
-  margin-bottom: 2rem;
-}
-
 .about-pictures__wrapper {
   animation: gridSlideIn 1.7s forwards;
   height: 77vh;
