@@ -21,11 +21,33 @@ export default function Projects({ cursorClass }) {
   const [Active4, setActive4] = useState(true);
   const [gitHubLogo, setGitHubLogo] = useState(gitLogo);
   const [autoplay, setAutoplay] = useState(true);
+  const [videoLink, setVideoLink] = useState(
+    "https://amzin-clone.netlify.app/"
+  );
+  const [gitHubLink, setGitHubLink] = useState(
+    "https://github.com/nwils000/amazon-clone-app"
+  );
+  const [videoLink2, setVideoLink2] = useState(
+    "https://nathan-wilson.netlify.app/"
+  );
+  const [gitHubLink2, setGitHubLink2] = useState(
+    "https://github.com/nwils000/my-portfolio-app"
+  );
+  const [projectTitle, setProjectTitle] = useState("Amazon Clone");
+  const [projectTitle2, setProjectTitle2] = useState("Portfolio");
 
   useEffect(() => {
     CursorAnimation();
     var w = window.innerWidth;
-    if (w <= 768) setAutoplay(false);
+    if (w <= 768) {
+      setAutoplay(false);
+      setVideoLink("https://nathan-wilson.netlify.app/");
+      setGitHubLink("https://github.com/nwils000/my-portfolio-app");
+      setVideoLink2("https://amzin-clone.netlify.app/");
+      setGitHubLink2("https://github.com/nwils000/amazon-clone-app");
+      setProjectTitle("Portfolio");
+      setProjectTitle2("Amazon Clone");
+    }
   }, []);
 
   function handleClick1() {
@@ -48,12 +70,8 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Amazon Clone</h2>
-            <a
-              href="https://amzin-clone.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <h2>{projectTitle}</h2>
+            <a href={videoLink} target="_blank" rel="noreferrer">
               <video
                 autoPlay={autoplay}
                 muted
@@ -62,17 +80,13 @@ export default function Projects({ cursorClass }) {
               ></video>
               <img
                 className="screenshot"
-                src={amzin}
+                src={portfolio}
                 alt="screenshot of project"
               ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick1}>Skills Used</button>
-              <a
-                href="https://github.com/nwils000/amazon-clone-app"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={gitHubLink} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}
@@ -253,12 +267,8 @@ export default function Projects({ cursorClass }) {
         <div className="projects__container">
           {" "}
           <div className="projects__content">
-            <h2>Portfolio</h2>
-            <a
-              href="https://nathan-wilson.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <h2>{projectTitle2}</h2>
+            <a href={videoLink2} target="_blank" rel="noreferrer">
               <video
                 autoPlay={autoplay}
                 muted
@@ -267,17 +277,13 @@ export default function Projects({ cursorClass }) {
               ></video>
               <img
                 className="screenshot"
-                src={portfolio}
+                src={amzin}
                 alt="screenshot of project"
               ></img>
             </a>
             <div className="projects__button-container">
               <button onClick={handleClick4}>Skills Used</button>
-              <a
-                href="https://github.com/nwils000/my-portfolio-app"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={gitHubLink2} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
                   src={gitHubLogo}

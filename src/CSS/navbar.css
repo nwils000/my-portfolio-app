@@ -105,6 +105,7 @@
   }
   .nav__container .dropdown__active,
   .nav__container .dropdown {
+    position: relative;
     display: block;
   }
   .nav__container .dropdown__active .circle {
@@ -130,6 +131,7 @@
     text-shadow: 0px 0px 5px #ffffffa6;
     font-size: 1.2rem;
     right: 31px;
+    z-index: 4;
   }
 
   .dropdown-flex-second-row {
@@ -155,16 +157,19 @@
     color: rgba(255, 255, 255, 0.82);
     text-shadow: 0px 0px 5px #ffffffa6;
     font-size: 1.2rem;
+    z-index: 4;
   }
 
   .circle img {
     position: relative;
     left: 91px;
+    z-index: 4;
   }
 
   .cross img {
     width: 40px;
     position: absolute;
+    z-index: 4;
   }
 }
 
