@@ -228,7 +228,7 @@ export default function Projects({ cursorClass }) {
             </div>
             <div className="projects__content-learned">
               <p>
-                1. useRef React hook
+                1. "useRef" React hook
                 <br />
                 2. JavaScript methods to create objects and filter arrays
                 <br />
