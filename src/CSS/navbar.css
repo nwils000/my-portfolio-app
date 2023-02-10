@@ -1,6 +1,6 @@
 .nav__container {
   display: grid;
-  grid-template-columns: 28vw 23vw 23vw 21.2vw;
+  grid-template-rows: 28vh 23vh 23vh 21.2vh;
   height: 2px;
   position: fixed;
   margin: 0 0 0 2.4vw;
@@ -11,15 +11,12 @@
 }
 
 .nav__line {
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 2px;
-  width: auto;
   margin-top: 6rem;
   display: flex;
   flex-direction: row-reverse;
   padding-right: 12vw;
-  animation: flash 4s linear infinite;
   pointer-events: none;
+  justify-content: left;
 }
 
 .nav__selected {
@@ -65,18 +62,6 @@
 .nav__line:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(8);
   background-color: rgba(255, 255, 255, 0.396);
-}
-
-@keyframes flash {
-  0% {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
 }
 
 @media screen and (max-width: 1700px) {
