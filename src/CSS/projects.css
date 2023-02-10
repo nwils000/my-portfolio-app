@@ -131,7 +131,11 @@
 
 @media screen and (max-width: 1170px) {
   .projects__container {
-    width: 70vw;
+    width: 60vw;
+  }
+
+  .projects__grid {
+    gap: 1rem;
   }
   .projects__content video {
     width: calc(100% - 30px);

@@ -25,10 +25,12 @@ export default function Navbar({ cursorClass }) {
             </div>
             <Link to="#about">About</Link>
             <Link to="#home">Home</Link>
-          </div>
-          <div className="dropdown-flex-second-row">
-            <Link to="#contact">Contact</Link>
-            <Link to="#projects">Projects</Link>
+            <Link className="link3" to="#contact">
+              Contact
+            </Link>
+            <Link className="link4" to="#projects">
+              Projects
+            </Link>
           </div>
         </div>
       </div>
