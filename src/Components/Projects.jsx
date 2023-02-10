@@ -15,10 +15,6 @@ import flashcard from "../Photos/flashcard.png";
 import portfolio from "../Photos/portfolio.png";
 
 export default function Projects({ cursorClass }) {
-  const [Active1, setActive1] = useState(true);
-  const [Active2, setActive2] = useState(true);
-  const [Active3, setActive3] = useState(true);
-  const [Active4, setActive4] = useState(true);
   const [gitHubLogo, setGitHubLogo] = useState(gitLogo);
   const [autoplay, setAutoplay] = useState(true);
   const [videoLink, setVideoLink] = useState(
@@ -50,24 +46,15 @@ export default function Projects({ cursorClass }) {
     }
   }, []);
 
-  function handleClick1() {
-    Active1 ? setActive1(false) : setActive1(true);
-  }
-  function handleClick2() {
-    Active2 ? setActive2(false) : setActive2(true);
-  }
-  function handleClick3() {
-    Active3 ? setActive3(false) : setActive3(true);
-  }
-  function handleClick4() {
-    Active4 ? setActive4(false) : setActive4(true);
-  }
-
   return (
     <div className="projects__wrapper" id="projects">
       <Navbar cursorClass={cursorClass} />
       <div className="projects__grid">
-        <div className="projects__container">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          className="projects__container"
+        >
           {" "}
           <div className="projects__content">
             <h2>{projectTitle}</h2>
@@ -85,7 +72,7 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick1}>Skills Used</button>
+              <div className="">Skills Used</div>
               <a href={gitHubLink} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
@@ -96,25 +83,21 @@ export default function Projects({ cursorClass }) {
                 />
               </a>
             </div>
-            <div
-              className={
-                Active1
-                  ? "projects__content-learned"
-                  : "projects__content-learned__clicked"
-              }
-            >
+            <div className="projects__content-learned">
               <p>
-                1. CSS Sprites <br />
-                2. Large arrays of object
-                <br />
-                3. State management
-                <br />
-                4. DOM manipulation
+                1. DOM manipulation <br />
+                2. State management <br />
+                3. CSS Sprites <br />
+                4. Large arrays of object
               </p>
             </div>
           </div>
         </div>
-        <div className="projects__container">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          className="projects__container"
+        >
           {" "}
           <div className="projects__content">
             <h2>Flashcards</h2>
@@ -131,7 +114,7 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick2}>Skills Used</button>
+              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/flashcard-app"
                 target="_blank"
@@ -146,13 +129,7 @@ export default function Projects({ cursorClass }) {
                 />
               </a>
             </div>
-            <div
-              className={
-                Active2
-                  ? "projects__content-learned"
-                  : "projects__content-learned__clicked"
-              }
-            >
+            <div className="projects__content-learned">
               <p>
                 1. Communicating with API <br />
                 2. CSS Animations <br />
@@ -161,7 +138,11 @@ export default function Projects({ cursorClass }) {
             </div>
           </div>
         </div>
-        <div className="projects__container">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          className="projects__container"
+        >
           {" "}
           <div className="projects__content">
             <h2>Birthday Global Events</h2>
@@ -183,7 +164,7 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick3}>Skills Used</button>
+              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/birthday-data-app"
                 target="_blank"
@@ -198,13 +179,7 @@ export default function Projects({ cursorClass }) {
                 />
               </a>
             </div>
-            <div
-              className={
-                Active3
-                  ? "projects__content-learned"
-                  : "projects__content-learned__clicked"
-              }
-            >
+            <div className="projects__content-learned">
               <p>
                 1. State management
                 <br />
@@ -215,7 +190,11 @@ export default function Projects({ cursorClass }) {
             </div>
           </div>
         </div>
-        <div className="projects__container">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          className="projects__container"
+        >
           {" "}
           <div className="projects__content">
             <h2>Recipe List</h2>
@@ -232,7 +211,7 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick4}>Skills Used</button>
+              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/recipe-list-app"
                 target="_blank"
@@ -247,13 +226,7 @@ export default function Projects({ cursorClass }) {
                 />
               </a>
             </div>
-            <div
-              className={
-                Active4
-                  ? "projects__content-learned"
-                  : "projects__content-learned__clicked"
-              }
-            >
+            <div className="projects__content-learned">
               <p>
                 1. useRef React hook
                 <br />
@@ -264,7 +237,11 @@ export default function Projects({ cursorClass }) {
             </div>
           </div>
         </div>
-        <div className="projects__container">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          className="projects__container"
+        >
           {" "}
           <div className="projects__content">
             <h2>{projectTitle2}</h2>
@@ -282,7 +259,7 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <button onClick={handleClick4}>Skills Used</button>
+              <div className="">Skills Used</div>
               <a href={gitHubLink2} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
@@ -293,13 +270,7 @@ export default function Projects({ cursorClass }) {
                 />
               </a>
             </div>
-            <div
-              className={
-                Active4
-                  ? "projects__content-learned"
-                  : "projects__content-learned__clicked"
-              }
-            >
+            <div className="projects__content-learned">
               <p>
                 1. Creating custom cursor effects
                 <br />

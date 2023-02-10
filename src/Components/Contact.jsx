@@ -38,8 +38,16 @@ export default function Contact({
     <div className="contact__wrapper" id="contact">
       <Navbar cursorClass={cursorClass} />
       <div className="form__container">
-        <h1>nwils000@gmail.com</h1>
-        <form className="contact__form" ref={form} onSubmit={sendEmail}>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
+          nwils000@gmail.com
+        </h1>
+        <form
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="contact__form"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <label contactLabel>Name</label>
           <input
             onMouseEnter={handleInputHover}

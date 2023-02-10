@@ -14,7 +14,11 @@ export default function About({ cursorClass }) {
   return (
     <div className="about__wrapper" id="about">
       <Navbar cursorClass={cursorClass} />
-      <div className="about__container">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1400"
+        className="about__container"
+      >
         <div className="about-pictures__wrapper">
           <div
             onMouseEnter={() => setPictureClass("about-pictures__grid")}
