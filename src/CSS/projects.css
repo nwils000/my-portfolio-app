@@ -151,6 +151,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .projects__grid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .projects__container h2 {
     font-size: 2rem;
