@@ -149,7 +149,6 @@
 }
 
 .about-pictures__grid .spriteClear {
-  cursor: default;
 }
 
 @media screen and (max-width: 1360px) {
