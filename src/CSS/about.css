@@ -6,8 +6,6 @@
     rgba(34, 111, 129, 1) 100%
   );
   min-height: 100vh;
-  position: relative;
-  z-index: -1;
 }
 
 .about__container {
