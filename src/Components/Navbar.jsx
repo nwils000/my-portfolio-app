@@ -23,13 +23,13 @@ export default function Navbar({ cursorClass }) {
             <div onClick={() => setDropdownClass("dropdown")}>
               <img src={cross} alt="" />
             </div>
-            <Link to="#about">About</Link>
             <Link to="#home">Home</Link>
-            <Link className="link3" to="#contact">
-              Contact
-            </Link>
+            <Link to="#about">About</Link>
             <Link className="link4" to="#projects">
               Projects
+            </Link>
+            <Link className="link3" to="#contact">
+              Contact
             </Link>
           </div>
         </div>
