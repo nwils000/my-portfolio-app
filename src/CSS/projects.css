@@ -12,9 +12,9 @@
 .projects__grid {
   display: grid;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
-  gap: 5rem;
+  gap: 3rem;
   justify-content: center;
 }
 
