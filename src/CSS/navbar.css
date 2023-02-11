@@ -47,8 +47,9 @@
 .heading2 {
   right: 18px;
 }
-.heading3 {
+.nav__line .heading3 {
   right: 26px;
+  bottom: 73px;
 }
 .heading4 {
   right: 26px;
