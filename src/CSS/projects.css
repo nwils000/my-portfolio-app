@@ -1,10 +1,4 @@
 .projects__wrapper {
-  background: rgb(156, 231, 177);
-  background: linear-gradient(
-    0deg,
-    rgba(156, 231, 177, 1) 7%,
-    rgba(147, 128, 196, 1) 93%
-  );
   min-height: 100vh;
   width: 100%;
 }
@@ -20,7 +14,7 @@
 
 .projects__container {
   color: rgb(0, 0, 0);
-  background-color: #dfe8e9;
+  background-color: rgb(214, 214, 214);
   border-radius: 0.7rem;
   width: 840px;
   display: inline-block;
@@ -61,38 +55,11 @@
 
 .projects__button-container {
   cursor: default;
-}
-
-.projects__button-container div {
-  color: rgb(0, 0, 0);
-  width: 9rem;
-  position: relative;
-  right: -10%;
-  top: 0.35rem;
-  cursor: default;
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-.projects__content-learned p {
-  text-align: left;
-  display: block;
-  margin: 0 4rem;
-  margin-bottom: 2rem;
-  line-height: 40px;
-  font-size: 1.3rem;
-}
-
-.projects__content-learned p:hover {
-  cursor: default;
+  padding-bottom: 1rem;
 }
 
 .projects-git-hub__logo {
-  width: 85px;
-  position: relative;
-  left: 30.5%;
-  bottom: 1.85rem;
+  width: 100px;
 }
 
 .projects-git-hub__logo:hover {

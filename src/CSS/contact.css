@@ -1,11 +1,5 @@
 .contact__wrapper {
   min-height: 100vh;
-  background: rgb(156, 231, 177);
-  background: linear-gradient(
-    51deg,
-    rgba(156, 231, 177, 1) 0%,
-    rgba(57, 127, 195, 1) 100%
-  );
 }
 
 .form__container {
@@ -19,9 +13,9 @@
   margin-top: 3%;
   background: linear-gradient(
     -45deg,
-    rgba(166, 221, 255, 1) 25%,
+    #10549b 35%,
     rgba(255, 255, 255, 1) 50%,
-    rgba(166, 221, 255, 1) 75%
+    #10549b 65%
   );
   background-size: 300%;
   font-weight: 400;
@@ -44,7 +38,7 @@
 }
 
 .contact__form {
-  color: #ffffff;
+  color: #10549b;
   width: 25vw;
   font-size: 1rem;
 }
@@ -61,7 +55,7 @@
 
 .contact__input:focus,
 .contact__text-area:focus {
-  border: 2px solid rgb(116, 178, 197);
+  border: 2px solid #10549b;
 }
 
 .contact__text-area {
@@ -73,7 +67,7 @@
   padding: 7px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgb(222, 225, 240);
 }
 
 .form__container label {
@@ -83,8 +77,8 @@
 .contact__input[type="submit"] {
   cursor: none;
   margin-top: 2rem;
-  background: #dcf1ff;
-  color: rgb(0, 0, 0);
+  background: #10549b;
+  color: white;
   font-weight: bold;
   border: none;
   border-radius: 10rem;
@@ -93,7 +87,7 @@
 }
 
 .contact__input[type="submit"]:hover {
-  background-color: #a6ddff;
+  background-color: #094688;
   color: rgb(255, 255, 255);
   box-shadow: rgba(77, 77, 77, 0.096) 0px 2px 10px,
     rgba(0, 0, 0, 0.096) 0px 2px 10px;

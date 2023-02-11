@@ -33,14 +33,13 @@
   position: relative;
   top: 14%;
   left: 34.4%;
-  color: rgba(255, 255, 255, 0);
 }
 
 .home__name h1 {
   font-size: 5rem;
   word-spacing: 6px;
   animation: changeTextBg 6s linear infinite;
-  -webkit-background-clip: text;
+  color: white;
   letter-spacing: 4px;
 }
 
@@ -49,7 +48,7 @@
   font-size: 2rem;
   word-spacing: 3px;
   letter-spacing: 2px;
-  animation: changeTextBg 3s linear infinite;
+  color: #eaa583;
   -webkit-background-clip: text;
   position: relative;
   bottom: 45px;
@@ -64,18 +63,6 @@
   border-radius: 50%;
   mix-blend-mode: soft-light;
   transition: transform 0.3s ease;
-}
-
-@keyframes changeTextBg {
-  0% {
-    background-color: #ffffff;
-  }
-  50% {
-    background-color: #288ccf;
-  }
-  100% {
-    background-color: #ffffff;
-  }
 }
 
 @media screen and (max-width: 1070px) {

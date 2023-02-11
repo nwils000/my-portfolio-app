@@ -43,10 +43,12 @@ export default function About({ cursorClass }) {
         </div>
         <div className="about__content">
           <h1>Hello,</h1>
-          <h2>I'm a Front-end Web Developer.</h2>
+          <h2>
+            I'm a Front-end <p>Web Developer</p>.
+          </h2>
           <h3>
-            I'm proficient in HTML, CSS, JavaScript, React, and the
-            frameworks/libraries listed below.
+            I'm proficient in HTML, CSS, JavaScript, React, and the skills
+            listed below.
           </h3>
           <h2>Skills</h2>
           <ul>

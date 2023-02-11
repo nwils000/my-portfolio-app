@@ -72,7 +72,6 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <div className="">Skills Used</div>
               <a href={gitHubLink} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
@@ -82,14 +81,6 @@ export default function Projects({ cursorClass }) {
                   onMouseLeave={() => setGitHubLogo(gitLogo)}
                 />
               </a>
-            </div>
-            <div className="projects__content-learned">
-              <p>
-                1. DOM manipulation <br />
-                2. State management <br />
-                3. CSS Sprites <br />
-                4. Large arrays of object
-              </p>
             </div>
           </div>
         </div>
@@ -114,7 +105,6 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/flashcard-app"
                 target="_blank"
@@ -128,13 +118,6 @@ export default function Projects({ cursorClass }) {
                   onMouseLeave={() => setGitHubLogo(gitLogo)}
                 />
               </a>
-            </div>
-            <div className="projects__content-learned">
-              <p>
-                1. Communicating with API <br />
-                2. CSS Animations <br />
-                3. Dynamic classes using JavaScript
-              </p>
             </div>
           </div>
         </div>
@@ -164,7 +147,6 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/birthday-data-app"
                 target="_blank"
@@ -178,15 +160,6 @@ export default function Projects({ cursorClass }) {
                   onMouseLeave={() => setGitHubLogo(gitLogo)}
                 />
               </a>
-            </div>
-            <div className="projects__content-learned">
-              <p>
-                1. State management
-                <br />
-                2. Communicating with API
-                <br />
-                3. React hooks such as useEffect and useRef
-              </p>
             </div>
           </div>
         </div>
@@ -211,7 +184,6 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <div className="">Skills Used</div>
               <a
                 href="https://github.com/nwils000/recipe-list-app"
                 target="_blank"
@@ -225,15 +197,6 @@ export default function Projects({ cursorClass }) {
                   onMouseLeave={() => setGitHubLogo(gitLogo)}
                 />
               </a>
-            </div>
-            <div className="projects__content-learned">
-              <p>
-                1. "useRef" React hook
-                <br />
-                2. JavaScript methods to create objects and filter arrays
-                <br />
-                3. Saving to local storage
-              </p>
             </div>
           </div>
         </div>
@@ -259,7 +222,6 @@ export default function Projects({ cursorClass }) {
               ></img>
             </a>
             <div className="projects__button-container">
-              <div className="">Skills Used</div>
               <a href={gitHubLink2} target="_blank" rel="noreferrer">
                 <img
                   className="projects-git-hub__logo"
@@ -269,17 +231,6 @@ export default function Projects({ cursorClass }) {
                   onMouseLeave={() => setGitHubLogo(gitLogo)}
                 />
               </a>
-            </div>
-            <div className="projects__content-learned">
-              <p>
-                1. Creating custom cursor effects
-                <br />
-                2. CSS animations
-                <br />
-                3. Optimized video performance
-                <br />
-                4. Manipulating the DOM
-              </p>
             </div>
           </div>
         </div>
