@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "./Navbar";
 import CursorAnimation from "./CursorAnimation";
 import emailjs from "@emailjs/browser";
@@ -8,10 +8,19 @@ export default function Contact({
   handleInputLeave,
   cursorClass,
 }) {
+  const [isSent, setIsSent] = useState(false);
+
   const form = useRef();
   useEffect(() => {
     CursorAnimation();
   }, []);
+
+  const handleClick = () => {
+    setIsSent(true);
+    setTimeout(() => {
+      setIsSent(false);
+    }, 2000);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,7 +35,7 @@ export default function Contact({
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Meassage sent!");
+          console.log("Message sent!");
         },
         (error) => {
           console.log(error.text);
@@ -48,7 +57,7 @@ export default function Contact({
           ref={form}
           onSubmit={sendEmail}
         >
-          <label contactLabel>Name</label>
+          <label>Name</label>
           <input
             onMouseEnter={handleInputHover}
             onMouseLeave={handleInputLeave}
@@ -56,7 +65,7 @@ export default function Contact({
             type="text"
             name="user_name"
           />
-          <label contactLabel>Email</label>
+          <label>Email</label>
           <input
             onMouseEnter={handleInputHover}
             onMouseLeave={handleInputLeave}
@@ -64,7 +73,7 @@ export default function Contact({
             type="email"
             name="user_email"
           />
-          <label contactLabel>Message</label>
+          <label>Message</label>
           <textarea
             className="contact__text-area contact__input"
             onMouseEnter={handleInputHover}
@@ -72,7 +81,13 @@ export default function Contact({
             name="message"
             style={{ resize: "none" }}
           />
-          <input className="contact__input" type="submit" value="Send" />
+          <input
+            onClick={() => handleClick()}
+            className="contact__input"
+            type="submit"
+            value="Send"
+          />
+          {isSent && <div className="email-sent-message">Email Sent!</div>}
         </form>
       </div>
     </div>
